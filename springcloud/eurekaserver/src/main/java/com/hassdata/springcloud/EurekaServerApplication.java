@@ -14,6 +14,7 @@ public class EurekaServerApplication {
           if(!NetUtil.isUsableLocalPort(port)){
               System.err.printf("端口%d被占用了，无法启动%n",port);
               System.exit(1);
+              System.out.println("sdfsf");
           }
         new SpringApplicationBuilder(EurekaServerApplication.class).properties("server.port=" + port).run(args);    }
 }
